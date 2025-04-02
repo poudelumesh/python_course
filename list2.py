@@ -8,4 +8,4 @@ while True:
 
 print("your favorite games: ")   
 for game in games:
-    print("-", game) 
+    print(game) 
