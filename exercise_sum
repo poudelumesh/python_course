@@ -1,0 +1,11 @@
+total = 0
+while True:
+    try:
+
+       user_number = int(input("Enter the number(0 to stop): "))
+       if (user_number == 0):
+           break
+       total += user_number
+    except ValueError:
+        print("invalid, please enter only numbers")
+print("Total sum:" , total)
