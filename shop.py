@@ -9,7 +9,7 @@ careers = [{"name": "uber", "price": 15},
                      {"name": "indrive", "price": 7},]
 
 for index, product in enumerate(products):
-    print(f"for {product["name"]}press {index}")
+    print(f"for {product["name"]} - ${product["price]} press {index}")
 
 while True:
     user_product_index = int(input("please enter the product number: ")) 
@@ -22,7 +22,7 @@ while True:
     except ValueError:
         print("please enter only number")
 
-user_product = product[user_product_index]
+user_product = products[user_product_index]
 
 
 for index, career in enumerate(careers):
@@ -39,4 +39,6 @@ while True:
     except ValueError:
         print("please enter only number")
              
-user_career = career[user_career_index]
+user_career = careers[user_career_index]
+print(f"you choose {user_product["name"]} - ${user_product["price"]}")
+print(f"you choose {user_career["name"]} - ${user_career["price"]}")
